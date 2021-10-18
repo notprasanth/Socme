@@ -1,3 +1,4 @@
+/*styling of outer container*/
 .outerContainer {
     display: flex;
     justify-content: center;
@@ -5,10 +6,10 @@
     height: 100vh;
     background-color: #1A1A1D;
   }
-  
+ /*styling of container*/
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   /*as flex-direction by default is row so we changed it to column*/
     justify-content: space-between;
     background: #FFFFFF;
     border-radius: 8px;
@@ -16,6 +17,8 @@
     width: 35%;
   }
   
+/*to make responsive 
+   320px<=range<=480px*/
   @media (min-width: 320px) and (max-width: 480px) {
     .outerContainer {
       height: 100%;
@@ -26,9 +29,9 @@
       height: 100%;
     }
   }
-  
+ /*   480px <=range <=1200px*/ 
   @media (min-width: 480px) and (max-width: 1200px) {
     .container {
-      width: 60%;
+      width: 60%;      
     }
   }
